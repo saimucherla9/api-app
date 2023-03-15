@@ -1,0 +1,30 @@
+<div class="table-responsive">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">UserName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Website</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="" *ngFor="let user of usersData">
+        <td scope="row">{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td scope="row">{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.website}}</td>
+        <td><a [routerLink]="['/edit',user.id]" routerLinkActive="router-link-active"  type="button" class="btn btn-warning">Edit</a>
+          <a [routerLink]="['/delete',user.id]" routerLinkActive="router-link-active"  type="button" class="btn btn-danger">delete</a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
