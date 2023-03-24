@@ -16,6 +16,12 @@ export class ViewComponent implements OnInit {
   }
 
   getUsers(){
-    this.usersData = this.userservice.getUsersData().subscribe({next:data=>console.log(data)});
+    this.userservice.getUsersData().subscribe({next:data=>{
+
+      this.usersData=data;
+
+      console.log(data)}
+
+      });
   }
 }

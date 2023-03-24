@@ -1,0 +1,26 @@
+<p>editpost works!</p>
+<span>Post ID: {{postId}}</span>
+
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-primary">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">UserId</th>
+          <th scope="col">Title</th>
+          <th scope="col">Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">{{singlePostData.id}}</td>
+          <td>{{singlePostData.userId}}</td>
+          <td>{{singlePostData.title}}</td>
+          <td>{{singlePostData.body}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
